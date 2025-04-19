@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+
+	<Properties>
+		<Property name="FILE_LOG_DIR">./log</Property>
+		<Property name="ROLLINGFILE_LOG_DIR">./logfile</Property>
+	</Properties>
+
+	<Appenders>
+		<!-- JDBC Appender -->
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		
+		
+			<!-- 
+				this tag be used for JNDI connection 
+				<DataSource jndiName="java:/comp/env/jdbc/SampleDB" /> 
+			
+				older way of configuration
+				<appender name="DB" class="org.apache.log4j.jdbc.JDBCAppender">
+			  	<param name="url" value="jdbc:mysql://localhost/DBNAME"/>
+			   	<param name="driver" value="com.mysql.jdbc.Driver"/>
+			   	<param name="user" value="user_id"/>
+			   	<param name="password" value="password"/>
+			   	<param name="sql" value="INSERT INTO LOGS VALUES('%x','%d','%C','%p','%m')"/>
+			
+			
+			-->
+		
+		<!-- JDBC Appender -->
+		<JDBC name="databaseAppender" tableName="sampledb.logging">  <!-- class="org.apache.log4j.jdbc.JDBCAppender" -->
+			<DriverManager 	connectionString="jdbc:mysql://localhost:3306/sampledb"
+							driverClassName="com.mysql.cj.jdbc.Driver" 
+							username="root"
+							password="Mysql" />
+				<BurstFilter level="TRACE" rate="20" maxBurst="2" />
+				<Column name="EVENT_DATE" isEventTimestamp="true" />
+				<Column name="LEVEL" pattern="%level" />
+				<Column name="LOGGER" pattern="%logger" />
+				<Column name="MSG" pattern="%message" />
+				<Column name="THROWABLE" pattern="%ex{full}" />
+		</JDBC>
+
+		<!-- File Appender -->
+		<file name="file" filename="${FILE_LOG_DIR}\app.log">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %logger{36} - %msg%n" />
+		</file>
+		
+		<!-- Rolling File Appender -->
+		<RollingFile name="rollingFile"
+			fileName="${ROLLINGFILE_LOG_DIR}\rollingFile.log"
+			filePattern="${ROLLINGFILE_LOG_DIR}\rollingFile.%i.log"
+			ignoreExceptions="false">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="1KB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20"> 
+				<Delete basePath="${ROLLINGFILE_LOG_DIR}" maxDepth="2"> 
+					<IfFileName glob="*/rollingFile-*.log" /> 
+					<IfLastModified age="P30D" /> 
+				</Delete> 
+			</DefaultRolloverStrategy>
+		</RollingFile>
+	</Appenders>
+
+	<Loggers>
+
+		<!-- 
+			Logging logs for specific package 
+			<Logger name="com.example.main.MainLog" level="debug"> 
+				<AppenderRef ref="file" /> 
+			</Logger> 
+		-->
+
+		<!-- Enable Log Appenders based on needs and set level based on your requirements -->
+		<Root level="trace" additivity="false" >  <!-- name="org.apache.logging" -->
+		
+			<AppenderRef ref="console" />
+			
+			<!-- Enable this for logging logs into file system
+			<AppenderRef ref="file" />
+			-->
+			
+			<!-- Enable this for logging logs into rolling file
+			<AppenderRef ref="rollingFile" />
+			
+			-->
+			
+			<!--   	Enable this for logging logs into database
+			<AppenderRef ref="databaseAppender" /> 
+			-->
+		</Root>
+		<!--  <priority value="TRACE" /> -->
+	</Loggers>
+</Configuration>

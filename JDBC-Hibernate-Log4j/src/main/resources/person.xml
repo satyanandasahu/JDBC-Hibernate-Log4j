@@ -1,0 +1,6 @@
+<Person xmlns="https://www.satya.com" xsi:schemaLocation="https://www.satya.com schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>Satya</name>
+  <personId>247293743</personId>
+  <gender>Male</gender>
+  <age>44</age>
+</Person>

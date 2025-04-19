@@ -1,0 +1,916 @@
+2025-04-19 13:51:17.540 [main] com.example.main.MainHibernate - Inside Main
+2025-04-19 13:51:19.756 [main] com.example.main.MainHibernate - 1.This is a TRACE message.
+2025-04-19 13:51:19.942 [main] com.example.main.MainHibernate - 2.This is a DEBUG message.
+2025-04-19 13:51:20.108 [main] com.example.main.MainHibernate - 3.This is an INFO message.
+2025-04-19 13:51:20.238 [main] com.example.main.MainHibernate - 4.This is a WARN message.
+2025-04-19 13:51:20.379 [main] com.example.main.MainHibernate - 5.This is an ERROR message.
+2025-04-19 13:53:42.558 [main] com.example.main.MainHibernate - Inside Main
+2025-04-19 13:53:45.432 [main] com.example.dao.PersonDAO - Entered getPersonById
+2025-04-19 13:53:45.722 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-04-19 13:53:45.901 [main] org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+2025-04-19 13:53:46.071 [main] org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2025-04-19 13:53:46.270 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2025-04-19 13:53:46.404 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2025-04-19 13:53:46.532 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2025-04-19 13:53:46.669 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2025-04-19 13:53:46.801 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2025-04-19 13:53:47.041 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [cte] -> [org.hibernate.query.sqm.mutation.internal.cte.CteMutationStrategy]
+2025-04-19 13:53:47.175 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [global_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.GlobalTemporaryTableMutationStrategy]
+2025-04-19 13:53:47.303 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [local_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.LocalTemporaryTableMutationStrategy]
+2025-04-19 13:53:47.445 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [persistent] -> [org.hibernate.query.sqm.mutation.internal.temptable.PersistentTableMutationStrategy]
+2025-04-19 13:53:47.579 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2025-04-19 13:53:47.768 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2025-04-19 13:53:47.881 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+2025-04-19 13:53:48.033 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+2025-04-19 13:53:48.152 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+2025-04-19 13:53:48.292 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [standard] -> [org.hibernate.id.enhanced.StandardNamingStrategy]
+2025-04-19 13:53:48.423 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [single] -> [org.hibernate.id.enhanced.SingleNamingStrategy]
+2025-04-19 13:53:48.531 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [legacy] -> [org.hibernate.id.enhanced.LegacyNamingStrategy]
+2025-04-19 13:53:48.662 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.relational.ColumnOrderingStrategy] : [default] -> [org.hibernate.boot.model.relational.ColumnOrderingStrategyStandard]
+2025-04-19 13:53:48.841 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.relational.ColumnOrderingStrategy] : [legacy] -> [org.hibernate.boot.model.relational.ColumnOrderingStrategyLegacy]
+2025-04-19 13:53:48.967 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+2025-04-19 13:53:49.084 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+2025-04-19 13:53:49.238 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jackson] -> [org.hibernate.type.format.jackson.JacksonJsonFormatMapper]
+2025-04-19 13:53:49.356 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jsonb] -> [org.hibernate.type.format.jakartajson.JsonBJsonFormatMapper]
+2025-04-19 13:53:49.483 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jackson-xml] -> [org.hibernate.type.format.jackson.JacksonXmlFormatMapper]
+2025-04-19 13:53:49.611 [main] org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jaxb] -> [org.hibernate.type.format.jaxb.JaxbXmlFormatMapper]
+2025-04-19 13:53:49.808 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.0.Final
+2025-04-19 13:53:49.926 [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2025-04-19 13:53:50.119 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-04-19 13:53:50.296 [main] org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+2025-04-19 13:53:50.409 [main] org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+2025-04-19 13:53:50.553 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.id.factory.IdentifierGeneratorFactory]
+2025-04-19 13:53:50.691 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+2025-04-19 13:53:50.834 [main] org.hibernate.orm.idgen.factory - Ignoring CDI for resolving IdentifierGenerator instances as extended or delayed CDI support was enabled
+2025-04-19 13:53:50.982 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2025-04-19 13:53:51.076 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2025-04-19 13:53:51.165 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2025-04-19 13:53:51.253 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2025-04-19 13:53:51.353 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2025-04-19 13:53:51.510 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2025-04-19 13:53:51.619 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2025-04-19 13:53:51.699 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-04-19 13:53:51.796 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2025-04-19 13:53:51.873 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2025-04-19 13:53:52.050 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-04-19 13:53:52.184 [main] org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2025-04-19 13:53:52.317 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+2025-04-19 13:53:52.438 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+2025-04-19 13:53:52.527 [main] org.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2025-04-19 13:53:52.637 [main] org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2025-04-19 13:53:53.007 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@982bb90
+2025-04-19 13:53:53.121 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@982bb90
+2025-04-19 13:53:53.234 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@982bb90
+2025-04-19 13:53:53.370 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@6de30571
+2025-04-19 13:53:53.497 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@6de30571
+2025-04-19 13:53:53.610 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@5c92166b
+2025-04-19 13:53:53.734 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@5c92166b
+2025-04-19 13:53:53.843 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@5b022357
+2025-04-19 13:53:53.950 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@5b022357
+2025-04-19 13:53:54.061 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.BasicTypeReference@7dd00705
+2025-04-19 13:53:54.191 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.BasicTypeReference@7dd00705
+2025-04-19 13:53:54.364 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@7dd00705
+2025-04-19 13:53:54.478 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BasicTypeReference@6b587673
+2025-04-19 13:53:54.581 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@6b587673
+2025-04-19 13:53:54.693 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BasicTypeReference@6b587673
+2025-04-19 13:53:54.814 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@131fcb6f
+2025-04-19 13:53:54.927 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@131fcb6f
+2025-04-19 13:53:55.058 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.BasicTypeReference@30331109
+2025-04-19 13:53:55.198 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BasicTypeReference@4a9486c0
+2025-04-19 13:53:55.458 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@4a9486c0
+2025-04-19 13:53:55.543 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@629f066f
+2025-04-19 13:53:55.641 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@3a627c80
+2025-04-19 13:53:55.763 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.BasicTypeReference@67001148
+2025-04-19 13:53:55.874 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.BasicTypeReference@67001148
+2025-04-19 13:53:55.993 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@67001148
+2025-04-19 13:53:56.108 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.BasicTypeReference@3766c667
+2025-04-19 13:53:56.265 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.BasicTypeReference@3766c667
+2025-04-19 13:53:56.413 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@3766c667
+2025-04-19 13:53:56.515 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.BasicTypeReference@529cfee5
+2025-04-19 13:53:56.617 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.BasicTypeReference@529cfee5
+2025-04-19 13:53:56.733 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@529cfee5
+2025-04-19 13:53:56.849 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.BasicTypeReference@353efdbf
+2025-04-19 13:53:57.011 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.BasicTypeReference@353efdbf
+2025-04-19 13:53:57.113 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@353efdbf
+2025-04-19 13:53:57.303 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.BasicTypeReference@566d0c69
+2025-04-19 13:53:57.403 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.BasicTypeReference@566d0c69
+2025-04-19 13:53:57.492 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@566d0c69
+2025-04-19 13:53:57.679 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@4cdd2c73
+2025-04-19 13:53:57.784 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@4cdd2c73
+2025-04-19 13:53:57.886 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@1603dc2f
+2025-04-19 13:53:58.034 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@1603dc2f
+2025-04-19 13:53:58.211 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.BasicTypeReference@72fe8a4f
+2025-04-19 13:53:58.381 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.BasicTypeReference@72fe8a4f
+2025-04-19 13:53:58.560 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@72fe8a4f
+2025-04-19 13:53:58.726 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@4d74c3ba
+2025-04-19 13:53:58.848 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.BasicTypeReference@736f3e9e
+2025-04-19 13:53:59.010 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@736f3e9e
+2025-04-19 13:53:59.407 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@782168b7
+2025-04-19 13:53:59.608 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.BasicTypeReference@3c7cfcbb
+2025-04-19 13:53:59.783 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@3c7cfcbb
+2025-04-19 13:53:59.974 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.BasicTypeReference@3c7cfcbb
+2025-04-19 13:54:00.160 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@432034a
+2025-04-19 13:54:00.403 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.BasicTypeReference@173373b4
+2025-04-19 13:54:00.592 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@16a9a4f1
+2025-04-19 13:54:00.769 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.BasicTypeReference@215a34b4
+2025-04-19 13:54:00.990 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@215a34b4
+2025-04-19 13:54:01.134 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@6b68cb27
+2025-04-19 13:54:01.399 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@6b68cb27
+2025-04-19 13:54:01.590 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@4632cfc
+2025-04-19 13:54:01.788 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@c81fd12
+2025-04-19 13:54:01.997 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@652ab8d9
+2025-04-19 13:54:02.160 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@51dbd6e4
+2025-04-19 13:54:02.260 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@25a73de1
+2025-04-19 13:54:02.440 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@260f2144
+2025-04-19 13:54:02.584 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@6bd16207
+2025-04-19 13:54:02.770 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@6bd16207
+2025-04-19 13:54:02.860 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@78e89bfe
+2025-04-19 13:54:02.951 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@78e89bfe
+2025-04-19 13:54:03.053 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@7ec58feb
+2025-04-19 13:54:03.191 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@7ec58feb
+2025-04-19 13:54:03.281 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@48b22fd4
+2025-04-19 13:54:03.382 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@48b22fd4
+2025-04-19 13:54:03.473 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@2e140e59
+2025-04-19 13:54:03.660 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@2e140e59
+2025-04-19 13:54:03.804 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@55f8669d
+2025-04-19 13:54:03.891 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@9d200de
+2025-04-19 13:54:04.014 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@7573e12f
+2025-04-19 13:54:04.112 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@7573e12f
+2025-04-19 13:54:04.190 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@109d724c
+2025-04-19 13:54:04.301 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@42e22a53
+2025-04-19 13:54:04.421 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@31da6b2e
+2025-04-19 13:54:04.579 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@121c54fa
+2025-04-19 13:54:04.668 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@121c54fa
+2025-04-19 13:54:04.801 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@3015db78
+2025-04-19 13:54:04.877 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@34dc85a
+2025-04-19 13:54:04.977 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.BasicTypeReference@746cd757
+2025-04-19 13:54:05.074 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@746cd757
+2025-04-19 13:54:05.198 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.BasicTypeReference@4349754
+2025-04-19 13:54:05.382 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@4349754
+2025-04-19 13:54:05.453 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@28a6301f
+2025-04-19 13:54:05.630 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@28a6301f
+2025-04-19 13:54:05.909 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@28a6301f
+2025-04-19 13:54:06.029 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@7351a16e
+2025-04-19 13:54:06.189 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@7351a16e
+2025-04-19 13:54:06.300 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@7351a16e
+2025-04-19 13:54:06.424 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@2f7dcef2
+2025-04-19 13:54:06.516 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@63718b93
+2025-04-19 13:54:06.614 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration instant -> org.hibernate.type.BasicTypeReference@746b18fd
+2025-04-19 13:54:06.773 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@746b18fd
+2025-04-19 13:54:06.891 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@6edcd0d8
+2025-04-19 13:54:06.998 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@6edcd0d8
+2025-04-19 13:54:07.117 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@6edcd0d8
+2025-04-19 13:54:07.278 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@4e2916c3
+2025-04-19 13:54:07.413 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@546621c4
+2025-04-19 13:54:07.559 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.BasicTypeReference@53e3a87a
+2025-04-19 13:54:07.691 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@53e3a87a
+2025-04-19 13:54:07.803 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.BasicTypeReference@476a736d
+2025-04-19 13:54:07.987 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@476a736d
+2025-04-19 13:54:08.148 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@476a736d
+2025-04-19 13:54:08.419 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.BasicTypeReference@159a48a6
+2025-04-19 13:54:08.541 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@159a48a6
+2025-04-19 13:54:08.631 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@9a2ec9b
+2025-04-19 13:54:08.755 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@9a2ec9b
+2025-04-19 13:54:08.870 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@4930539b
+2025-04-19 13:54:08.971 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@4930539b
+2025-04-19 13:54:09.164 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@5327a06e
+2025-04-19 13:54:09.261 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@5327a06e
+2025-04-19 13:54:09.360 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.BasicTypeReference@1f52eb6f
+2025-04-19 13:54:09.447 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@1f52eb6f
+2025-04-19 13:54:09.528 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@2d2acd89
+2025-04-19 13:54:09.627 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.JavaObjectType@108bdbd8
+2025-04-19 13:54:09.714 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@108bdbd8
+2025-04-19 13:54:09.825 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration null -> org.hibernate.type.NullType@7965a51c
+2025-04-19 13:54:09.903 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@421a4ee1
+2025-04-19 13:54:10.002 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@33cbfa57
+2025-04-19 13:54:10.079 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@234a8f27
+2025-04-19 13:54:10.202 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@7c4fc2bf
+2025-04-19 13:54:10.290 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@236134a1
+2025-04-19 13:54:10.370 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@25b5c5e3
+2025-04-19 13:54:10.456 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@69d6a7cd
+2025-04-19 13:54:10.621 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@4e92466a
+2025-04-19 13:54:10.747 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - SqmFunctionRegistry created
+2025-04-19 13:54:10.870 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+2025-04-19 13:54:11.042 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2025-04-19 13:54:11.142 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+2025-04-19 13:54:11.243 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+2025-04-19 13:54:11.383 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+2025-04-19 13:54:11.507 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+2025-04-19 13:54:11.607 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+2025-04-19 13:54:11.730 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-04-19 13:54:11.807 [main] org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2025-04-19 13:54:11.894 [main] org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/sampledb]
+2025-04-19 13:54:12.038 [main] org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=Mysql, user=root}
+2025-04-19 13:54:12.123 [main] org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-04-19 13:54:12.253 [main] org.hibernate.orm.connections.pooling - Initializing Connection pool with 1 Connections
+2025-04-19 13:54:12.326 [main] org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-04-19 13:54:12.427 [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 9.2.0-commercial
+      major : 9
+      minor : 2
+2025-04-19 13:54:12.588 [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-j-8.0.32 (Revision: fa4912a849140828e48162a2c396c8df0091bed7)
+      major : 8
+      minor : 0
+2025-04-19 13:54:12.826 [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - JDBC version : 4.2
+2025-04-19 13:54:13.147 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2025-04-19 13:54:13.269 [main] org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-04-19 13:54:13.364 [main] org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-04-19 13:54:13.540 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [sampledb]
+2025-04-19 13:54:13.610 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [null]
+2025-04-19 13:54:13.722 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+2025-04-19 13:54:13.838 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e73b552) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@221dad51)
+2025-04-19 13:54:13.925 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@240f6c41) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3659d7b1)
+2025-04-19 13:54:14.074 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@73a19967) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5e746d37)
+2025-04-19 13:54:14.160 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@112d1c8e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d49fd31)
+2025-04-19 13:54:14.241 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3b2f4a93) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@213bd3d5)
+2025-04-19 13:54:14.357 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6fca5907) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6ec65b5e)
+2025-04-19 13:54:14.474 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@31edeac) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@67d86804)
+2025-04-19 13:54:14.563 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6d469831) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@74db12c2)
+2025-04-19 13:54:14.662 [main] org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2e3f79a2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1460c81d)
+2025-04-19 13:54:14.810 [main] org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry - addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-04-19 13:54:14.909 [main] org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry - addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-04-19 13:54:15.001 [main] org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry - addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-04-19 13:54:15.108 [main] org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry - addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-04-19 13:54:15.237 [main] org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry - addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-04-19 13:54:15.368 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration null -> org.hibernate.type.NullType@459cfcca
+2025-04-19 13:54:15.458 [main] org.hibernate.type.BasicTypeRegistry - Type registration key [null] overrode previous entry : `org.hibernate.type.NullType@7965a51c`
+2025-04-19 13:54:15.606 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@1(java.time.OffsetDateTime,3003)
+2025-04-19 13:54:15.760 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> basicType@1(java.time.OffsetDateTime,3003)
+2025-04-19 13:54:15.890 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> basicType@1(java.time.OffsetDateTime,3003)
+2025-04-19 13:54:15.971 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@2(java.time.ZonedDateTime,3003)
+2025-04-19 13:54:16.059 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> basicType@2(java.time.ZonedDateTime,3003)
+2025-04-19 13:54:16.191 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> basicType@2(java.time.ZonedDateTime,3003)
+2025-04-19 13:54:16.279 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.OffsetTimeType -> basicType@3(java.time.OffsetTime,3007)
+2025-04-19 13:54:16.427 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> basicType@3(java.time.OffsetTime,3007)
+2025-04-19 13:54:16.510 [main] org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> basicType@3(java.time.OffsetTime,3007)
+2025-04-19 13:54:16.595 [main] org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2cc03cd1] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4e17913b]
+2025-04-19 13:54:16.821 [main] org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2025-04-19 13:54:17.098 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+2025-04-19 13:54:17.226 [main] org.hibernate.boot.model.internal.EntityBinder - Binding entity from annotated class: com.example.vo.Person
+2025-04-19 13:54:17.383 [main] org.hibernate.boot.model.internal.EntityBinder - Import with entity name Person
+2025-04-19 13:54:17.474 [main] org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Person -> com.example.vo.Person
+2025-04-19 13:54:17.593 [main] org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: com.example.vo.Person -> com.example.vo.Person
+2025-04-19 13:54:17.668 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Person]
+2025-04-19 13:54:17.819 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Person]
+2025-04-19 13:54:18.139 [main] org.hibernate.boot.model.internal.EntityBinder - Bind entity com.example.vo.Person on table Person
+2025-04-19 13:54:18.249 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+2025-04-19 13:54:18.333 [main] org.hibernate.boot.model.internal.AnnotatedColumn - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2025-04-19 13:54:18.427 [main] org.hibernate.boot.model.internal.PropertyBinder - Processing annotations of com.example.vo.Person.id
+2025-04-19 13:54:18.507 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Id]
+2025-04-19 13:54:18.604 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Id]
+2025-04-19 13:54:18.713 [main] org.hibernate.boot.model.internal.AnnotatedColumn - Binding column: AnnotatedColumn(column='Id')
+2025-04-19 13:54:18.828 [main] org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.vo.Person] is safe
+2025-04-19 13:54:19.061 [main] org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.vo.Person
+2025-04-19 13:54:19.171 [main] org.hibernate.boot.model.internal.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+2025-04-19 13:54:19.277 [main] org.hibernate.boot.model.internal.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.vo.Person:id]
+2025-04-19 13:54:19.394 [main] org.hibernate.boot.model.internal.BasicValueBinder - building BasicValue for id
+2025-04-19 13:54:19.605 [main] org.hibernate.mapping.BasicValue - Skipping column re-registration: Person.Id
+2025-04-19 13:54:19.834 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Id]
+2025-04-19 13:54:19.953 [main] org.hibernate.boot.model.internal.PropertyBinder - Building property id
+2025-04-19 13:54:20.112 [main] org.hibernate.boot.model.internal.PropertyBinder - Cascading id with null
+2025-04-19 13:54:20.261 [main] org.hibernate.boot.model.internal.BinderHelper - #makeIdGenerator(BasicValue([Column(Id)]), id, assigned, , ...)
+2025-04-19 13:54:20.384 [main] org.hibernate.boot.model.internal.PropertyBinder - Bind @Id on id
+2025-04-19 13:54:20.675 [main] org.hibernate.boot.model.internal.PropertyBinder - Processing annotations of com.example.vo.Person.age
+2025-04-19 13:54:20.824 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [age]
+2025-04-19 13:54:21.044 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [age]
+2025-04-19 13:54:21.156 [main] org.hibernate.boot.model.internal.AnnotatedColumn - Binding column: AnnotatedColumn(column='age')
+2025-04-19 13:54:21.255 [main] org.hibernate.boot.model.internal.PropertyBinder - MetadataSourceProcessor property age with lazy=false
+2025-04-19 13:54:21.343 [main] org.hibernate.boot.model.internal.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.vo.Person:age]
+2025-04-19 13:54:21.427 [main] org.hibernate.boot.model.internal.BasicValueBinder - building BasicValue for age
+2025-04-19 13:54:21.537 [main] org.hibernate.mapping.BasicValue - Skipping column re-registration: Person.age
+2025-04-19 13:54:21.687 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [age]
+2025-04-19 13:54:21.808 [main] org.hibernate.boot.model.internal.PropertyBinder - Building property age
+2025-04-19 13:54:22.048 [main] org.hibernate.boot.model.internal.PropertyBinder - Cascading age with null
+2025-04-19 13:54:22.146 [main] org.hibernate.boot.model.internal.PropertyBinder - Processing annotations of com.example.vo.Person.firstName
+2025-04-19 13:54:22.243 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [FirstName]
+2025-04-19 13:54:22.345 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [FirstName]
+2025-04-19 13:54:22.442 [main] org.hibernate.boot.model.internal.AnnotatedColumn - Binding column: AnnotatedColumn(column='FirstName')
+2025-04-19 13:54:22.549 [main] org.hibernate.boot.model.internal.PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+2025-04-19 13:54:22.677 [main] org.hibernate.boot.model.internal.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.vo.Person:firstName]
+2025-04-19 13:54:22.782 [main] org.hibernate.boot.model.internal.BasicValueBinder - building BasicValue for firstName
+2025-04-19 13:54:22.887 [main] org.hibernate.mapping.BasicValue - Skipping column re-registration: Person.FirstName
+2025-04-19 13:54:23.011 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [FirstName]
+2025-04-19 13:54:23.187 [main] org.hibernate.boot.model.internal.PropertyBinder - Building property firstName
+2025-04-19 13:54:23.331 [main] org.hibernate.boot.model.internal.PropertyBinder - Cascading firstName with null
+2025-04-19 13:54:23.578 [main] org.hibernate.boot.model.internal.PropertyBinder - Processing annotations of com.example.vo.Person.gender
+2025-04-19 13:54:23.665 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [gender]
+2025-04-19 13:54:23.773 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [gender]
+2025-04-19 13:54:23.885 [main] org.hibernate.boot.model.internal.AnnotatedColumn - Binding column: AnnotatedColumn(column='gender')
+2025-04-19 13:54:24.020 [main] org.hibernate.boot.model.internal.PropertyBinder - MetadataSourceProcessor property gender with lazy=false
+2025-04-19 13:54:24.208 [main] org.hibernate.boot.model.internal.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.vo.Person:gender]
+2025-04-19 13:54:24.287 [main] org.hibernate.boot.model.internal.BasicValueBinder - building BasicValue for gender
+2025-04-19 13:54:24.392 [main] org.hibernate.mapping.BasicValue - Skipping column re-registration: Person.gender
+2025-04-19 13:54:24.470 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [gender]
+2025-04-19 13:54:24.547 [main] org.hibernate.boot.model.internal.PropertyBinder - Building property gender
+2025-04-19 13:54:24.670 [main] org.hibernate.boot.model.internal.PropertyBinder - Cascading gender with null
+2025-04-19 13:54:24.936 [main] org.hibernate.boot.model.internal.PropertyBinder - Processing annotations of com.example.vo.Person.lastName
+2025-04-19 13:54:25.081 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [LastName]
+2025-04-19 13:54:25.267 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [LastName]
+2025-04-19 13:54:25.421 [main] org.hibernate.boot.model.internal.AnnotatedColumn - Binding column: AnnotatedColumn(column='LastName')
+2025-04-19 13:54:25.523 [main] org.hibernate.boot.model.internal.PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+2025-04-19 13:54:25.661 [main] org.hibernate.boot.model.internal.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.vo.Person:lastName]
+2025-04-19 13:54:25.838 [main] org.hibernate.boot.model.internal.BasicValueBinder - building BasicValue for lastName
+2025-04-19 13:54:25.933 [main] org.hibernate.mapping.BasicValue - Skipping column re-registration: Person.LastName
+2025-04-19 13:54:26.119 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [LastName]
+2025-04-19 13:54:26.331 [main] org.hibernate.boot.model.internal.PropertyBinder - Building property lastName
+2025-04-19 13:54:26.474 [main] org.hibernate.boot.model.internal.PropertyBinder - Cascading lastName with null
+2025-04-19 13:54:26.580 [main] org.hibernate.boot.model.internal.PropertyBinder - Processing annotations of com.example.vo.Person.middleName
+2025-04-19 13:54:26.722 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [MiddleName]
+2025-04-19 13:54:26.797 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [MiddleName]
+2025-04-19 13:54:26.872 [main] org.hibernate.boot.model.internal.AnnotatedColumn - Binding column: AnnotatedColumn(column='MiddleName')
+2025-04-19 13:54:26.961 [main] org.hibernate.boot.model.internal.PropertyBinder - MetadataSourceProcessor property middleName with lazy=false
+2025-04-19 13:54:27.038 [main] org.hibernate.boot.model.internal.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.vo.Person:middleName]
+2025-04-19 13:54:27.119 [main] org.hibernate.boot.model.internal.BasicValueBinder - building BasicValue for middleName
+2025-04-19 13:54:27.227 [main] org.hibernate.mapping.BasicValue - Skipping column re-registration: Person.MiddleName
+2025-04-19 13:54:27.315 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [MiddleName]
+2025-04-19 13:54:27.482 [main] org.hibernate.boot.model.internal.PropertyBinder - Building property middleName
+2025-04-19 13:54:27.563 [main] org.hibernate.boot.model.internal.PropertyBinder - Cascading middleName with null
+2025-04-19 13:54:27.680 [main] org.hibernate.boot.model.internal.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for id
+2025-04-19 13:54:27.813 [main] org.hibernate.boot.model.internal.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for age
+2025-04-19 13:54:27.937 [main] org.hibernate.boot.model.internal.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for firstName
+2025-04-19 13:54:28.139 [main] org.hibernate.boot.model.internal.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for gender
+2025-04-19 13:54:28.484 [main] org.hibernate.boot.model.internal.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for lastName
+2025-04-19 13:54:28.609 [main] org.hibernate.boot.model.internal.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for middleName
+2025-04-19 13:54:28.692 [main] org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [person]
+2025-04-19 13:54:28.873 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.boot.spi.SessionFactoryBuilderService]
+2025-04-19 13:54:29.043 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+2025-04-19 13:54:29.223 [main] org.hibernate.loader.BatchFetchStyle - Interpreting BatchFetchStyle from setting : null
+2025-04-19 13:54:29.437 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+2025-04-19 13:54:29.542 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.bytecode.spi.BytecodeProvider]
+2025-04-19 13:54:29.638 [main] org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-04-19 13:54:30.396 [main] org.hibernate.internal.SessionFactoryImpl - Building session factory
+2025-04-19 13:54:30.492 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+2025-04-19 13:54:30.827 [main] org.hibernate.service.internal.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-04-19 13:54:31.146 [main] org.hibernate.internal.SessionFactoryImpl - Instantiating SessionFactory with settings: {hibernate.format_sql=true, java.specification.version=21, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\POC\javasession\JavaXML\target\classes;C:\Users\Satya\.m2\repository\org\hibernate\orm\hibernate-core\6.2.0.Final\hibernate-core-6.2.0.Final.jar;C:\Users\Satya\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Satya\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Satya\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\Satya\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Satya\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\Satya\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Satya\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\Satya\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Satya\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\Satya\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\Satya\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\Satya\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\Satya\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\Satya\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\Satya\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Satya\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Satya\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\Satya\.m2\repository\com\mysql\mysql-connector-j\8.0.32\mysql-connector-j-8.0.32.jar;C:\Users\Satya\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\Satya\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.3\log4j-core-2.24.3.jar;C:\Users\Satya\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, user.variant=, java.vendor.url=https://adoptium.net/, user.timezone=Asia/Calcutta, java.vm.specification.version=21, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\POC\eclipse-jee-2024-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin, sun.java.command=com.example.main.MainHibernate, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\Satya, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-04-16, java.home=C:\POC\eclipse-jee-2024-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=21.0.3+9-LTS, user.name=Satya, stdout.encoding=UTF-8, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/sampledb, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=Temurin-21.0.3+9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=C:\Users\Satya\AppData\Local\Temp\, java.version=21.0.3, user.dir=C:\POC\javasession\JavaXML, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@b61edb9, native.encoding=Cp1252, java.library.path=C:\POC\eclipse-jee-2024-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Satya/Desktop/eclipse-jee-2025-03-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529/jre/bin/server;C:/Users/Satya/Desktop/eclipse-jee-2025-03-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\POC\apache-maven-3.9.8\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\GitHub CLI\;C:\Users\Satya\AppData\Local\Microsoft\WindowsApps;C:\POC\apache-maven-3.9.8\bin;C:\Users\Satya\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-23\bin;C:\POC\gradle-8.13-all\gradle-8.13\bin;;C:\Users\Satya\Desktop\eclipse-jee-2025-03-R-win32-x86_64\eclipse;;., stderr.encoding=UTF-8, java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, java.vm.version=21.0.3+9-LTS, hibernate.bytecode.use_reflection_optimizer=true, sun.io.unicode.encoding=UnicodeLittle, java.class.version=65.0}
+2025-04-19 13:54:31.234 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [null]
+2025-04-19 13:54:31.389 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.cache.spi.CacheImplementor]
+2025-04-19 13:54:31.550 [main] org.hibernate.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2025-04-19 13:54:31.803 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
+2025-04-19 13:54:31.918 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under min; prior registration was null
+2025-04-19 13:54:32.018 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sum)] under sum; prior registration was null
+2025-04-19 13:54:32.108 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(avg)] under avg; prior registration was null
+2025-04-19 13:54:32.192 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CountFunction@7fad214a] under count; prior registration was null
+2025-04-19 13:54:32.291 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@4640195a] under every; prior registration was null
+2025-04-19 13:54:32.432 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@4207852d] under any; prior registration was null
+2025-04-19 13:54:32.629 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(floor)] under floor; prior registration was null
+2025-04-19 13:54:32.721 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ceiling)] under ceiling; prior registration was null
+2025-04-19 13:54:32.805 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(mod)] under mod; prior registration was null
+2025-04-19 13:54:32.888 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(abs)] under abs; prior registration was null
+2025-04-19 13:54:32.999 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sign)] under sign; prior registration was null
+2025-04-19 13:54:33.098 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sqrt)] under sqrt; prior registration was null
+2025-04-19 13:54:33.199 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ln)] under ln; prior registration was null
+2025-04-19 13:54:33.297 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(exp)] under exp; prior registration was null
+2025-04-19 13:54:33.523 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(power)] under power; prior registration was null
+2025-04-19 13:54:33.624 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(round)] under round; prior registration was null
+2025-04-19 13:54:33.722 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sin)] under sin; prior registration was null
+2025-04-19 13:54:33.833 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cos)] under cos; prior registration was null
+2025-04-19 13:54:33.922 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tan)] under tan; prior registration was null
+2025-04-19 13:54:34.023 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asin)] under asin; prior registration was null
+2025-04-19 13:54:34.132 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acos)] under acos; prior registration was null
+2025-04-19 13:54:34.232 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan)] under atan; prior registration was null
+2025-04-19 13:54:34.364 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan2)] under atan2; prior registration was null
+2025-04-19 13:54:34.501 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@467b0f6e] under sinh; prior registration was null
+2025-04-19 13:54:34.592 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@5e230fc6] under cosh; prior registration was null
+2025-04-19 13:54:34.710 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@31f295b6] under tanh; prior registration was null
+2025-04-19 13:54:34.836 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7ba93755] under pi; prior registration was null
+2025-04-19 13:54:34.918 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2693c618] under log; prior registration was null
+2025-04-19 13:54:35.030 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(coalesce)] under coalesce; prior registration was null
+2025-04-19 13:54:35.158 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nullif)] under nullif; prior registration was null
+2025-04-19 13:54:35.261 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(left)] under left; prior registration was null
+2025-04-19 13:54:35.387 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(right)] under right; prior registration was null
+2025-04-19 13:54:35.518 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(replace)] under replace; prior registration was null
+2025-04-19 13:54:35.637 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(concat)] under concat; prior registration was null
+2025-04-19 13:54:35.722 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lower)] under lower; prior registration was null
+2025-04-19 13:54:35.815 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(upper)] under upper; prior registration was null
+2025-04-19 13:54:35.980 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substring)] under substring; prior registration was null
+2025-04-19 13:54:36.146 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(locate)] under locate; prior registration was null
+2025-04-19 13:54:36.236 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(character_length)] under character_length; prior registration was null
+2025-04-19 13:54:36.371 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : length -> character_length
+2025-04-19 13:54:36.590 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LocatePositionEmulation@66383c29] under position; prior registration was null
+2025-04-19 13:54:36.714 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InsertSubstringOverlayEmulation@2272cbb0] under overlay; prior registration was null
+2025-04-19 13:54:36.800 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TrimFunction@5d512ddb] under trim; prior registration was null
+2025-04-19 13:54:36.933 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastFunction@25c2a9e3] under cast; prior registration was null
+2025-04-19 13:54:37.033 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@423a0e1d] under collate; prior registration was null
+2025-04-19 13:54:37.170 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ExtractFunction@7e15f4d4] under extract; prior registration was null
+2025-04-19 13:54:37.268 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(least)] under least; prior registration was null
+2025-04-19 13:54:37.385 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(greatest)] under greatest; prior registration was null
+2025-04-19 13:54:37.545 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CoalesceIfnullEmulation@4dadd690] under ifnull; prior registration was null
+2025-04-19 13:54:37.641 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lpad)] under lpad; prior registration was null
+2025-04-19 13:54:37.819 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rpad)] under rpad; prior registration was null
+2025-04-19 13:54:38.040 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LpadRpadPadEmulation@494c8f29] under pad; prior registration was null
+2025-04-19 13:54:38.173 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastStrEmulation@7e1ffe70] under str; prior registration was null
+2025-04-19 13:54:38.274 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@14447be] under format; prior registration was null
+2025-04-19 13:54:38.350 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampaddFunction@3a479fda] under timestampadd; prior registration was null
+2025-04-19 13:54:38.528 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampdiffFunction@2accaec2] under timestampdiff; prior registration was null
+2025-04-19 13:54:38.648 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : dateadd -> timestampadd
+2025-04-19 13:54:38.761 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : datediff -> timestampdiff
+2025-04-19 13:54:38.879 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@6ddee60f] under current_date; prior registration was null
+2025-04-19 13:54:39.031 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@500051c5] under current_time; prior registration was null
+2025-04-19 13:54:39.136 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@5482bcac] under current_timestamp; prior registration was null
+2025-04-19 13:54:39.266 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : current date -> current_date
+2025-04-19 13:54:39.400 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : current time -> current_time
+2025-04-19 13:54:39.588 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : current timestamp -> current_timestamp
+2025-04-19 13:54:39.691 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@8aeab9e] under local_date; prior registration was null
+2025-04-19 13:54:39.804 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@5f366587] under local_time; prior registration was null
+2025-04-19 13:54:39.887 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@71179b6f] under local_datetime; prior registration was null
+2025-04-19 13:54:39.977 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@7ca16adc] under offset_datetime; prior registration was null
+2025-04-19 13:54:40.098 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : local date -> local_date
+2025-04-19 13:54:40.175 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : local time -> local_time
+2025-04-19 13:54:40.267 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : local datetime -> local_datetime
+2025-04-19 13:54:40.364 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : offset datetime -> offset_datetime
+2025-04-19 13:54:40.476 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@7f85217c] under instant; prior registration was null
+2025-04-19 13:54:40.618 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : current_instant -> instant
+2025-04-19 13:54:40.730 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.SqlFunction@22bf9122] under sql; prior registration was null
+2025-04-19 13:54:40.809 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(soundex)] under soundex; prior registration was null
+2025-04-19 13:54:40.908 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(radians)] under radians; prior registration was null
+2025-04-19 13:54:41.039 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(degrees)] under degrees; prior registration was null
+2025-04-19 13:54:41.130 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cot)] under cot; prior registration was null
+2025-04-19 13:54:41.216 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log)] under log; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2693c618
+2025-04-19 13:54:41.326 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log2)] under log2; prior registration was null
+2025-04-19 13:54:41.405 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log10)] under log10; prior registration was null
+2025-04-19 13:54:41.560 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ltrim)] under ltrim; prior registration was null
+2025-04-19 13:54:41.636 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rtrim)] under rtrim; prior registration was null
+2025-04-19 13:54:41.719 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was null
+2025-04-19 13:54:41.836 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(reverse)] under reverse; prior registration was null
+2025-04-19 13:54:41.913 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(space)] under space; prior registration was null
+2025-04-19 13:54:42.035 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(repeat)] under repeat; prior registration was null
+2025-04-19 13:54:42.126 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@2c748a15] under lpad; prior registration was NamedSqmFunctionTemplate(lpad)
+2025-04-19 13:54:42.224 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@7741771e] under rpad; prior registration was NamedSqmFunctionTemplate(rpad)
+2025-04-19 13:54:42.300 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(md5)] under md5; prior registration was null
+2025-04-19 13:54:42.400 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(day)] under day; prior registration was null
+2025-04-19 13:54:42.507 [Hibernate Connection Pool Validation Thread] org.hibernate.orm.connections.pooling - Connection pool now considered primed; min-size will be maintained
+2025-04-19 13:54:42.834 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(month)] under month; prior registration was null
+2025-04-19 13:54:42.943 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(year)] under year; prior registration was null
+2025-04-19 13:54:43.111 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(hour)] under hour; prior registration was null
+2025-04-19 13:54:43.215 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(minute)] under minute; prior registration was null
+2025-04-19 13:54:43.298 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(second)] under second; prior registration was null
+2025-04-19 13:54:43.430 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(microsecond)] under microsecond; prior registration was null
+2025-04-19 13:54:43.686 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofweek)] under dayofweek; prior registration was null
+2025-04-19 13:54:43.831 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofmonth)] under dayofmonth; prior registration was null
+2025-04-19 13:54:43.917 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : day -> dayofmonth
+2025-04-19 13:54:44.008 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofyear)] under dayofyear; prior registration was null
+2025-04-19 13:54:44.095 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(week)] under week; prior registration was null
+2025-04-19 13:54:44.183 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(quarter)] under quarter; prior registration was null
+2025-04-19 13:54:44.271 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(monthname)] under monthname; prior registration was null
+2025-04-19 13:54:44.379 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayname)] under dayname; prior registration was null
+2025-04-19 13:54:44.477 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_day)] under last_day; prior registration was null
+2025-04-19 13:54:44.593 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(date)] under date; prior registration was null
+2025-04-19 13:54:44.781 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(timestamp)] under timestamp; prior registration was null
+2025-04-19 13:54:44.869 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(time)] under time; prior registration was null
+2025-04-19 13:54:45.072 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_date)] under utc_date; prior registration was null
+2025-04-19 13:54:45.168 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_time)] under utc_time; prior registration was null
+2025-04-19 13:54:45.290 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_timestamp)] under utc_timestamp; prior registration was null
+2025-04-19 13:54:45.378 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rand)] under rand; prior registration was null
+2025-04-19 13:54:45.503 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(crc32)] under crc32; prior registration was null
+2025-04-19 13:54:45.966 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha1)] under sha1; prior registration was null
+2025-04-19 13:54:46.112 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha2)] under sha2; prior registration was null
+2025-04-19 13:54:46.210 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha)] under sha; prior registration was null
+2025-04-19 13:54:46.376 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_length)] under bit_length; prior registration was null
+2025-04-19 13:54:46.510 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was NamedSqmFunctionTemplate(octet_length)
+2025-04-19 13:54:46.602 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ascii)] under ascii; prior registration was null
+2025-04-19 13:54:46.730 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(instr)] under instr; prior registration was null
+2025-04-19 13:54:46.851 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substr; prior registration was null
+2025-04-19 13:54:46.962 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6fe595dc] under position; prior registration was org.hibernate.dialect.function.LocatePositionEmulation@66383c29
+2025-04-19 13:54:47.050 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curtime)] under curtime; prior registration was null
+2025-04-19 13:54:47.142 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curdate)] under curdate; prior registration was null
+2025-04-19 13:54:47.238 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(now)] under now; prior registration was null
+2025-04-19 13:54:47.327 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TruncFunction@4351ed61] under trunc; prior registration was null
+2025-04-19 13:54:47.417 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : truncate -> trunc
+2025-04-19 13:54:47.504 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(insert)] under insert; prior registration was null
+2025-04-19 13:54:47.692 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3fe512d2] under bitand; prior registration was null
+2025-04-19 13:54:47.926 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@800d065] under bitor; prior registration was null
+2025-04-19 13:54:48.045 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3ad8717d] under bitxor; prior registration was null
+2025-04-19 13:54:48.168 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3946075] under bitnot; prior registration was null
+2025-04-19 13:54:48.284 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_and)] under bit_and; prior registration was null
+2025-04-19 13:54:48.390 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_or)] under bit_or; prior registration was null
+2025-04-19 13:54:48.478 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev)] under stddev; prior registration was null
+2025-04-19 13:54:48.568 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_pop)] under stddev_pop; prior registration was null
+2025-04-19 13:54:48.700 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_samp)] under stddev_samp; prior registration was null
+2025-04-19 13:54:48.866 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(variance)] under variance; prior registration was null
+2025-04-19 13:54:48.994 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_pop)] under var_pop; prior registration was null
+2025-04-19 13:54:49.108 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_samp)] under var_samp; prior registration was null
+2025-04-19 13:54:49.263 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(datediff)] under datediff; prior registration was null
+2025-04-19 13:54:49.390 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(adddate)] under adddate; prior registration was null
+2025-04-19 13:54:49.463 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subdate)] under subdate; prior registration was null
+2025-04-19 13:54:49.554 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(addtime)] under addtime; prior registration was null
+2025-04-19 13:54:49.665 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subtime)] under subtime; prior registration was null
+2025-04-19 13:54:49.801 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@53747c4a] under format; prior registration was org.hibernate.dialect.function.FormatFunction@14447be
+2025-04-19 13:54:49.921 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(makedate)] under makedate; prior registration was null
+2025-04-19 13:54:50.007 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(maketime)] under maketime; prior registration was null
+2025-04-19 13:54:50.096 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was null
+2025-04-19 13:54:50.261 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under localtimestamp; prior registration was null
+2025-04-19 13:54:50.360 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under local_time; prior registration was org.hibernate.dialect.function.CurrentFunction@5f366587
+2025-04-19 13:54:50.527 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under local_datetime; prior registration was org.hibernate.dialect.function.CurrentFunction@71179b6f
+2025-04-19 13:54:50.610 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was NamedSqmFunctionTemplate(localtime)
+2025-04-19 13:54:50.692 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@42ea7565] under pi; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7ba93755
+2025-04-19 13:54:50.903 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2c719bd4] under chr; prior registration was null
+2025-04-19 13:54:50.980 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registering alternate key : char -> chr
+2025-04-19 13:54:51.080 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2b736fee] under sysdate; prior registration was null
+2025-04-19 13:54:51.179 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(row_number)] under row_number; prior registration was null
+2025-04-19 13:54:51.298 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lag)] under lag; prior registration was null
+2025-04-19 13:54:51.367 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lead)] under lead; prior registration was null
+2025-04-19 13:54:51.512 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(first_value)] under first_value; prior registration was null
+2025-04-19 13:54:51.667 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_value)] under last_value; prior registration was null
+2025-04-19 13:54:51.865 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nth_value)] under nth_value; prior registration was null
+2025-04-19 13:54:51.934 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@310b2b6f] under rank; prior registration was null
+2025-04-19 13:54:52.011 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@4db77402] under dense_rank; prior registration was null
+2025-04-19 13:54:52.141 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@66e17eff] under percent_rank; prior registration was null
+2025-04-19 13:54:52.209 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@3421debd] under cume_dist; prior registration was null
+2025-04-19 13:54:52.350 [main] org.hibernate.query.sqm.function.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ListaggGroupConcatEmulation@6d6ac396] under listagg; prior registration was null
+2025-04-19 13:54:52.474 [main] org.hibernate.HQL_FUNCTIONS - abs(NUMERIC arg)
+2025-04-19 13:54:52.568 [main] org.hibernate.HQL_FUNCTIONS - Double acos(NUMERIC arg)
+2025-04-19 13:54:52.667 [main] org.hibernate.HQL_FUNCTIONS - adddate(DATE datetime, INTEGER days)
+2025-04-19 13:54:52.829 [main] org.hibernate.HQL_FUNCTIONS - addtime(TIME datetime, TIME time)
+2025-04-19 13:54:52.929 [main] org.hibernate.HQL_FUNCTIONS - Boolean any(BOOLEAN arg)
+2025-04-19 13:54:53.049 [main] org.hibernate.HQL_FUNCTIONS - Integer ascii(STRING arg)
+2025-04-19 13:54:53.175 [main] org.hibernate.HQL_FUNCTIONS - Double asin(NUMERIC arg)
+2025-04-19 13:54:53.283 [main] org.hibernate.HQL_FUNCTIONS - Double atan(NUMERIC arg)
+2025-04-19 13:54:53.383 [main] org.hibernate.HQL_FUNCTIONS - Double atan2(NUMERIC arg0, NUMERIC arg1)
+2025-04-19 13:54:53.471 [main] org.hibernate.HQL_FUNCTIONS - Double avg(NUMERIC arg)
+2025-04-19 13:54:53.582 [main] org.hibernate.HQL_FUNCTIONS - bit_and(arg)
+2025-04-19 13:54:53.659 [main] org.hibernate.HQL_FUNCTIONS - Integer bit_length(STRING_OR_CLOB arg)
+2025-04-19 13:54:53.762 [main] org.hibernate.HQL_FUNCTIONS - bit_or(arg)
+2025-04-19 13:54:53.847 [main] org.hibernate.HQL_FUNCTIONS - bitand(arg0, arg1)
+2025-04-19 13:54:53.941 [main] org.hibernate.HQL_FUNCTIONS - bitnot(arg)
+2025-04-19 13:54:54.024 [main] org.hibernate.HQL_FUNCTIONS - bitor(arg0, arg1)
+2025-04-19 13:54:54.113 [main] org.hibernate.HQL_FUNCTIONS - bitxor(arg0, arg1)
+2025-04-19 13:54:54.201 [main] org.hibernate.HQL_FUNCTIONS - cast(arg as Type)
+2025-04-19 13:54:54.347 [main] org.hibernate.HQL_FUNCTIONS - ceiling(NUMERIC arg)
+2025-04-19 13:54:54.445 [main] org.hibernate.HQL_FUNCTIONS - Character char(INTEGER arg)
+2025-04-19 13:54:54.523 [main] org.hibernate.HQL_FUNCTIONS - Integer character_length(STRING_OR_CLOB arg)
+2025-04-19 13:54:54.611 [main] org.hibernate.HQL_FUNCTIONS - Character chr(INTEGER arg)
+2025-04-19 13:54:54.688 [main] org.hibernate.HQL_FUNCTIONS - coalesce(arg0[, arg1[, ...]])
+2025-04-19 13:54:54.788 [main] org.hibernate.HQL_FUNCTIONS - String collate(STRING string as COLLATION collation)
+2025-04-19 13:54:54.914 [main] org.hibernate.HQL_FUNCTIONS - String concat(STRING string0[, STRING string1[, ...]])
+2025-04-19 13:54:55.022 [main] org.hibernate.HQL_FUNCTIONS - Double cos(NUMERIC arg)
+2025-04-19 13:54:55.177 [main] org.hibernate.HQL_FUNCTIONS - Double cosh(NUMERIC arg)
+2025-04-19 13:54:55.276 [main] org.hibernate.HQL_FUNCTIONS - Double cot(NUMERIC arg)
+2025-04-19 13:54:55.398 [main] org.hibernate.HQL_FUNCTIONS - Long count([distinct ]{arg|*})
+2025-04-19 13:54:55.508 [main] org.hibernate.HQL_FUNCTIONS - Integer crc32(arg)
+2025-04-19 13:54:55.622 [main] org.hibernate.HQL_FUNCTIONS - Double cume_dist([arg0[, ...]])
+2025-04-19 13:54:55.728 [main] org.hibernate.HQL_FUNCTIONS - Date curdate()
+2025-04-19 13:54:55.851 [main] org.hibernate.HQL_FUNCTIONS - Date current date
+2025-04-19 13:54:56.073 [main] org.hibernate.HQL_FUNCTIONS - Time current time
+2025-04-19 13:54:56.184 [main] org.hibernate.HQL_FUNCTIONS - Timestamp current timestamp
+2025-04-19 13:54:56.361 [main] org.hibernate.HQL_FUNCTIONS - Date current_date
+2025-04-19 13:54:56.482 [main] org.hibernate.HQL_FUNCTIONS - Instant current_instant
+2025-04-19 13:54:56.598 [main] org.hibernate.HQL_FUNCTIONS - Time current_time
+2025-04-19 13:54:56.724 [main] org.hibernate.HQL_FUNCTIONS - Timestamp current_timestamp
+2025-04-19 13:54:56.826 [main] org.hibernate.HQL_FUNCTIONS - Time curtime()
+2025-04-19 13:54:56.927 [main] org.hibernate.HQL_FUNCTIONS - Date date(arg)
+2025-04-19 13:54:57.038 [main] org.hibernate.HQL_FUNCTIONS - dateadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2025-04-19 13:54:57.178 [main] org.hibernate.HQL_FUNCTIONS - Integer datediff(DATE end, DATE start)
+2025-04-19 13:54:57.289 [main] org.hibernate.HQL_FUNCTIONS - Integer day(DATE arg)
+2025-04-19 13:54:57.404 [main] org.hibernate.HQL_FUNCTIONS - String dayname(DATE arg)
+2025-04-19 13:54:57.532 [main] org.hibernate.HQL_FUNCTIONS - Integer dayofmonth(DATE arg)
+2025-04-19 13:54:57.677 [main] org.hibernate.HQL_FUNCTIONS - Integer dayofweek(DATE arg)
+2025-04-19 13:54:57.777 [main] org.hibernate.HQL_FUNCTIONS - Integer dayofyear(DATE arg)
+2025-04-19 13:54:57.905 [main] org.hibernate.HQL_FUNCTIONS - Double degrees(NUMERIC arg)
+2025-04-19 13:54:58.008 [main] org.hibernate.HQL_FUNCTIONS - Long dense_rank([arg0[, ...]])
+2025-04-19 13:54:58.112 [main] org.hibernate.HQL_FUNCTIONS - Boolean every(BOOLEAN arg)
+2025-04-19 13:54:58.210 [main] org.hibernate.HQL_FUNCTIONS - Double exp(NUMERIC arg)
+2025-04-19 13:54:58.296 [main] org.hibernate.HQL_FUNCTIONS - extract(TEMPORAL_UNIT field from TEMPORAL arg)
+2025-04-19 13:54:58.418 [main] org.hibernate.HQL_FUNCTIONS - first_valueANY value
+2025-04-19 13:54:58.528 [main] org.hibernate.HQL_FUNCTIONS - floor(NUMERIC arg)
+2025-04-19 13:54:58.661 [main] org.hibernate.HQL_FUNCTIONS - String format(TEMPORAL datetime as STRING pattern)
+2025-04-19 13:54:58.797 [main] org.hibernate.HQL_FUNCTIONS - greatest(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2025-04-19 13:54:58.893 [main] org.hibernate.HQL_FUNCTIONS - Integer hour(TIME arg)
+2025-04-19 13:54:59.009 [main] org.hibernate.HQL_FUNCTIONS - ifnull(arg0, arg1)
+2025-04-19 13:54:59.130 [main] org.hibernate.HQL_FUNCTIONS - String insert(STRING string, INTEGER start, INTEGER length, STRING replacement)
+2025-04-19 13:54:59.274 [main] org.hibernate.HQL_FUNCTIONS - Instant instant
+2025-04-19 13:54:59.442 [main] org.hibernate.HQL_FUNCTIONS - Integer instr(STRING string, STRING pattern[, INTEGER start[, INTEGER occurrence]])
+2025-04-19 13:54:59.577 [main] org.hibernate.HQL_FUNCTIONS - lagANY value[, INTEGER offset[, ANY default]]
+2025-04-19 13:54:59.782 [main] org.hibernate.HQL_FUNCTIONS - Date last_day(DATE arg)
+2025-04-19 13:54:59.947 [main] org.hibernate.HQL_FUNCTIONS - last_valueANY value
+2025-04-19 13:55:00.242 [main] org.hibernate.HQL_FUNCTIONS - leadANY value[, INTEGER offset[, ANY default]]
+2025-04-19 13:55:00.356 [main] org.hibernate.HQL_FUNCTIONS - least(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2025-04-19 13:55:00.487 [main] org.hibernate.HQL_FUNCTIONS - String left(STRING string, INTEGER length)
+2025-04-19 13:55:00.633 [main] org.hibernate.HQL_FUNCTIONS - Integer length(STRING_OR_CLOB arg)
+2025-04-19 13:55:00.937 [main] org.hibernate.HQL_FUNCTIONS - String listagg(STRING arg0, STRING arg1)
+2025-04-19 13:55:01.089 [main] org.hibernate.HQL_FUNCTIONS - Double ln(NUMERIC arg)
+2025-04-19 13:55:01.201 [main] org.hibernate.HQL_FUNCTIONS - LocalDate local date
+2025-04-19 13:55:01.354 [main] org.hibernate.HQL_FUNCTIONS - LocalDateTime local datetime
+2025-04-19 13:55:01.487 [main] org.hibernate.HQL_FUNCTIONS - LocalTime local time
+2025-04-19 13:55:01.572 [main] org.hibernate.HQL_FUNCTIONS - LocalDate local_date
+2025-04-19 13:55:01.661 [main] org.hibernate.HQL_FUNCTIONS - LocalDateTime local_datetime
+2025-04-19 13:55:01.845 [main] org.hibernate.HQL_FUNCTIONS - LocalTime local_time
+2025-04-19 13:55:01.937 [main] org.hibernate.HQL_FUNCTIONS - Timestamp localtime
+2025-04-19 13:55:02.049 [main] org.hibernate.HQL_FUNCTIONS - Timestamp localtimestamp
+2025-04-19 13:55:02.201 [main] org.hibernate.HQL_FUNCTIONS - Integer locate(STRING pattern, STRING string[, INTEGER start])
+2025-04-19 13:55:02.326 [main] org.hibernate.HQL_FUNCTIONS - Double log(NUMERIC arg0[, NUMERIC arg1])
+2025-04-19 13:55:02.424 [main] org.hibernate.HQL_FUNCTIONS - Double log10(NUMERIC arg)
+2025-04-19 13:55:02.564 [main] org.hibernate.HQL_FUNCTIONS - Double log2(NUMERIC arg)
+2025-04-19 13:55:02.641 [main] org.hibernate.HQL_FUNCTIONS - String lower(STRING string)
+2025-04-19 13:55:02.719 [main] org.hibernate.HQL_FUNCTIONS - String lpad(string, length[, padding])
+2025-04-19 13:55:02.797 [main] org.hibernate.HQL_FUNCTIONS - String ltrim(STRING string[, STRING characters])
+2025-04-19 13:55:02.877 [main] org.hibernate.HQL_FUNCTIONS - Date makedate(INTEGER year, INTEGER dayofyear)
+2025-04-19 13:55:02.987 [main] org.hibernate.HQL_FUNCTIONS - Time maketime(INTEGER hour, INTEGER min, INTEGER sec)
+2025-04-19 13:55:03.073 [main] org.hibernate.HQL_FUNCTIONS - max(COMPARABLE arg)
+2025-04-19 13:55:03.151 [main] org.hibernate.HQL_FUNCTIONS - String md5(arg)
+2025-04-19 13:55:03.243 [main] org.hibernate.HQL_FUNCTIONS - Integer microsecond(TIME arg)
+2025-04-19 13:55:03.343 [main] org.hibernate.HQL_FUNCTIONS - min(COMPARABLE arg)
+2025-04-19 13:55:03.425 [main] org.hibernate.HQL_FUNCTIONS - Integer minute(TIME arg)
+2025-04-19 13:55:03.532 [main] org.hibernate.HQL_FUNCTIONS - Integer mod(INTEGER arg0, INTEGER arg1)
+2025-04-19 13:55:03.648 [main] org.hibernate.HQL_FUNCTIONS - Integer month(DATE arg)
+2025-04-19 13:55:03.731 [main] org.hibernate.HQL_FUNCTIONS - String monthname(DATE arg)
+2025-04-19 13:55:03.818 [main] org.hibernate.HQL_FUNCTIONS - Timestamp now()
+2025-04-19 13:55:03.900 [main] org.hibernate.HQL_FUNCTIONS - nth_valueANY value, INTEGER nth
+2025-04-19 13:55:04.042 [main] org.hibernate.HQL_FUNCTIONS - nullif(arg0, arg1)
+2025-04-19 13:55:04.196 [main] org.hibernate.HQL_FUNCTIONS - Integer octet_length(STRING_OR_CLOB arg)
+2025-04-19 13:55:04.258 [main] org.hibernate.HQL_FUNCTIONS - OffsetDateTime offset datetime
+2025-04-19 13:55:04.346 [main] org.hibernate.HQL_FUNCTIONS - OffsetDateTime offset_datetime
+2025-04-19 13:55:04.424 [main] org.hibernate.HQL_FUNCTIONS - String overlay(STRING string placing STRING replacement from INTEGER start[ for INTEGER length])
+2025-04-19 13:55:04.523 [main] org.hibernate.HQL_FUNCTIONS - String pad(STRING string with INTEGER length {leading|trailing}[ STRING character])
+2025-04-19 13:55:04.601 [main] org.hibernate.HQL_FUNCTIONS - Double percent_rank([arg0[, ...]])
+2025-04-19 13:55:04.689 [main] org.hibernate.HQL_FUNCTIONS - Double pi
+2025-04-19 13:55:04.789 [main] org.hibernate.HQL_FUNCTIONS - Integer position(STRING pattern in STRING string)
+2025-04-19 13:55:04.867 [main] org.hibernate.HQL_FUNCTIONS - Double power(NUMERIC arg0, NUMERIC arg1)
+2025-04-19 13:55:05.048 [main] org.hibernate.HQL_FUNCTIONS - Integer quarter(DATE arg)
+2025-04-19 13:55:05.178 [main] org.hibernate.HQL_FUNCTIONS - Double radians(NUMERIC arg)
+2025-04-19 13:55:05.270 [main] org.hibernate.HQL_FUNCTIONS - Double rand([INTEGER seed])
+2025-04-19 13:55:05.343 [main] org.hibernate.HQL_FUNCTIONS - Long rank([arg0[, ...]])
+2025-04-19 13:55:05.420 [main] org.hibernate.HQL_FUNCTIONS - String repeat(STRING string, INTEGER times)
+2025-04-19 13:55:05.520 [main] org.hibernate.HQL_FUNCTIONS - String replace(STRING string, STRING pattern, STRING replacement)
+2025-04-19 13:55:05.590 [main] org.hibernate.HQL_FUNCTIONS - String reverse(STRING arg)
+2025-04-19 13:55:05.768 [main] org.hibernate.HQL_FUNCTIONS - String right(STRING string, INTEGER length)
+2025-04-19 13:55:05.851 [main] org.hibernate.HQL_FUNCTIONS - round(NUMERIC number[, INTEGER places])
+2025-04-19 13:55:05.918 [main] org.hibernate.HQL_FUNCTIONS - Long row_number()
+2025-04-19 13:55:05.998 [main] org.hibernate.HQL_FUNCTIONS - String rpad(string, length[, padding])
+2025-04-19 13:55:06.076 [main] org.hibernate.HQL_FUNCTIONS - String rtrim(STRING string[, STRING characters])
+2025-04-19 13:55:06.161 [main] org.hibernate.HQL_FUNCTIONS - Integer second(TIME arg)
+2025-04-19 13:55:06.278 [main] org.hibernate.HQL_FUNCTIONS - String sha(arg)
+2025-04-19 13:55:06.350 [main] org.hibernate.HQL_FUNCTIONS - String sha1(arg)
+2025-04-19 13:55:06.483 [main] org.hibernate.HQL_FUNCTIONS - String sha2(arg0, arg1)
+2025-04-19 13:55:06.560 [main] org.hibernate.HQL_FUNCTIONS - Integer sign(NUMERIC arg)
+2025-04-19 13:55:06.671 [main] org.hibernate.HQL_FUNCTIONS - Double sin(NUMERIC arg)
+2025-04-19 13:55:06.749 [main] org.hibernate.HQL_FUNCTIONS - Double sinh(NUMERIC arg)
+2025-04-19 13:55:06.827 [main] org.hibernate.HQL_FUNCTIONS - String soundex(arg)
+2025-04-19 13:55:06.904 [main] org.hibernate.HQL_FUNCTIONS - String space(INTEGER arg)
+2025-04-19 13:55:06.981 [main] org.hibernate.HQL_FUNCTIONS - Object sql
+2025-04-19 13:55:07.063 [main] org.hibernate.HQL_FUNCTIONS - Double sqrt(NUMERIC arg)
+2025-04-19 13:55:07.202 [main] org.hibernate.HQL_FUNCTIONS - Double stddev(NUMERIC arg)
+2025-04-19 13:55:07.291 [main] org.hibernate.HQL_FUNCTIONS - Double stddev_pop(NUMERIC arg)
+2025-04-19 13:55:07.380 [main] org.hibernate.HQL_FUNCTIONS - Double stddev_samp(NUMERIC arg)
+2025-04-19 13:55:07.490 [main] org.hibernate.HQL_FUNCTIONS - String str(arg)
+2025-04-19 13:55:07.602 [main] org.hibernate.HQL_FUNCTIONS - subdate(DATE datetime, INTEGER days)
+2025-04-19 13:55:07.678 [main] org.hibernate.HQL_FUNCTIONS - String substr(STRING string, INTEGER start[, INTEGER length])
+2025-04-19 13:55:07.829 [main] org.hibernate.HQL_FUNCTIONS - String substring(STRING string{ from|,} INTEGER start[{ for|,} INTEGER length])
+2025-04-19 13:55:07.911 [main] org.hibernate.HQL_FUNCTIONS - subtime(TIME datetime, TIME time)
+2025-04-19 13:55:07.988 [main] org.hibernate.HQL_FUNCTIONS - sum(arg)
+2025-04-19 13:55:08.055 [main] org.hibernate.HQL_FUNCTIONS - Timestamp sysdate()
+2025-04-19 13:55:08.132 [main] org.hibernate.HQL_FUNCTIONS - Double tan(NUMERIC arg)
+2025-04-19 13:55:08.209 [main] org.hibernate.HQL_FUNCTIONS - Double tanh(NUMERIC arg)
+2025-04-19 13:55:08.298 [main] org.hibernate.HQL_FUNCTIONS - String time(arg)
+2025-04-19 13:55:08.378 [main] org.hibernate.HQL_FUNCTIONS - Timestamp timestamp(arg0[, arg1])
+2025-04-19 13:55:08.465 [main] org.hibernate.HQL_FUNCTIONS - timestampadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2025-04-19 13:55:08.542 [main] org.hibernate.HQL_FUNCTIONS - basicType@13(java.lang.Long,-5)|basicType@16(java.lang.Double,8) timestampdiff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+2025-04-19 13:55:08.619 [main] org.hibernate.HQL_FUNCTIONS - String trim([[{leading|trailing|both} ][STRING arg0 ]from] STRING arg1)
+2025-04-19 13:55:08.697 [main] org.hibernate.HQL_FUNCTIONS - trunc( ... )
+2025-04-19 13:55:08.830 [main] org.hibernate.HQL_FUNCTIONS - truncate( ... )
+2025-04-19 13:55:08.898 [main] org.hibernate.HQL_FUNCTIONS - String upper(STRING string)
+2025-04-19 13:55:09.026 [main] org.hibernate.HQL_FUNCTIONS - Date utc_date
+2025-04-19 13:55:09.122 [main] org.hibernate.HQL_FUNCTIONS - Time utc_time
+2025-04-19 13:55:09.240 [main] org.hibernate.HQL_FUNCTIONS - Timestamp utc_timestamp
+2025-04-19 13:55:09.324 [main] org.hibernate.HQL_FUNCTIONS - Double var_pop(NUMERIC arg)
+2025-04-19 13:55:09.417 [main] org.hibernate.HQL_FUNCTIONS - Double var_samp(NUMERIC arg)
+2025-04-19 13:55:09.500 [main] org.hibernate.HQL_FUNCTIONS - Double variance(NUMERIC arg)
+2025-04-19 13:55:09.594 [main] org.hibernate.HQL_FUNCTIONS - Integer week(DATE arg)
+2025-04-19 13:55:09.683 [main] org.hibernate.HQL_FUNCTIONS - Integer year(DATE arg)
+2025-04-19 13:55:09.771 [main] org.hibernate.orm.query.plan.cache - Starting QueryPlanCache(2048)
+2025-04-19 13:55:09.877 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+2025-04-19 13:55:10.151 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+2025-04-19 13:55:10.229 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+2025-04-19 13:55:10.521 [main] org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.example.vo.Person] is safe
+2025-04-19 13:55:10.700 [main] org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.vo.Person
+2025-04-19 13:55:10.806 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+2025-04-19 13:55:11.336 [main] org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl - HHH000513: Unable to create the ReflectionOptimizer for [com.example.vo.Person]
+org.hibernate.bytecode.internal.bytebuddy.PrivateAccessorException: private accessor [age]
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.findAccessors(BytecodeProviderImpl.java:1250) ~[hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl.getReflectionOptimizer(BytecodeProviderImpl.java:231) ~[hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.resolveReflectionOptimizer(EntityRepresentationStrategyPojoStandard.java:293) ~[hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.metamodel.internal.EntityRepresentationStrategyPojoStandard.<init>(EntityRepresentationStrategyPojoStandard.java:161) ~[hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.metamodel.internal.ManagedTypeRepresentationResolverStandard.resolveStrategy(ManagedTypeRepresentationResolverStandard.java:62) ~[hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:495) ~[hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:139) ~[hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) [?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) [?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) [?:?]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:92) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:75) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.processBootEntities(MappingMetamodelImpl.java:247) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:185) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:319) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:269) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:894) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:913) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at com.example.utils.HibernateUtil.getSessionFactory(HibernateUtil.java:37) [classes/:?]
+	at com.example.dao.PersonDAO.getSession(PersonDAO.java:18) [classes/:?]
+	at com.example.dao.PersonDAO.getPersonById(PersonDAO.java:52) [classes/:?]
+	at com.example.main.MainHibernate.main(MainHibernate.java:39) [classes/:?]
+2025-04-19 13:55:11.487 [main] org.hibernate.persister.entity.AbstractPropertyMapping - Skipping duplicate registration of path [age], existing type = [basicType@5(java.lang.Integer,4)], incoming type = [basicType@5(java.lang.Integer,4)]
+2025-04-19 13:55:11.631 [main] org.hibernate.persister.entity.AbstractPropertyMapping - Skipping duplicate registration of path [firstName], existing type = [basicType@4(java.lang.String,12)], incoming type = [basicType@4(java.lang.String,12)]
+2025-04-19 13:55:11.708 [main] org.hibernate.persister.entity.AbstractPropertyMapping - Skipping duplicate registration of path [gender], existing type = [basicType@4(java.lang.String,12)], incoming type = [basicType@4(java.lang.String,12)]
+2025-04-19 13:55:11.799 [main] org.hibernate.persister.entity.AbstractPropertyMapping - Skipping duplicate registration of path [lastName], existing type = [basicType@4(java.lang.String,12)], incoming type = [basicType@4(java.lang.String,12)]
+2025-04-19 13:55:11.938 [main] org.hibernate.persister.entity.AbstractPropertyMapping - Skipping duplicate registration of path [middleName], existing type = [basicType@4(java.lang.String,12)], incoming type = [basicType@4(java.lang.String,12)]
+2025-04-19 13:55:12.058 [main] org.hibernate.persister.entity.AbstractPropertyMapping - Skipping duplicate registration of path [id], existing type = [basicType@4(java.lang.String,12)], incoming type = [basicType@4(java.lang.String,12)]
+2025-04-19 13:55:12.258 [main] org.hibernate.orm.model.mapping.creation - Starting post-init callbacks
+2025-04-19 13:55:12.442 [main] org.hibernate.orm.model.mapping.creation - Starting PostInitCallbackEntry : Entity(com.example.vo.Person) `staticFetchableList` generator
+2025-04-19 13:55:12.636 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.sql.ast.spi.ParameterMarkerStrategy]
+2025-04-19 13:55:12.787 [main] org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.example.vo.Person
+2025-04-19 13:55:12.849 [main] org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select Id from Person where Id=?
+2025-04-19 13:55:12.949 [main] org.hibernate.persister.entity.AbstractEntityPersister -  Insert (0): insert into Person (age,FirstName,gender,LastName,MiddleName,Id) values (?,?,?,?,?,?)
+2025-04-19 13:55:13.040 [main] org.hibernate.persister.entity.AbstractEntityPersister -  Update (0): update Person set age=?,FirstName=?,gender=?,LastName=?,MiddleName=? where Id=?
+2025-04-19 13:55:13.138 [main] org.hibernate.persister.entity.AbstractEntityPersister -  Delete (0): delete from Person where Id=?
+2025-04-19 13:55:13.263 [main] org.hibernate.orm.sql.ast.create - Created new SQL alias : p1_0
+2025-04-19 13:55:13.363 [main] org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(com.example.vo.Person)] with identifierForTableGroup [com.example.vo.Person] for NavigablePath [com.example.vo.Person] 
+2025-04-19 13:55:13.503 [main] org.hibernate.loader.ast.internal.LoaderSelectBuilder - Starting visitation of FetchParent's Fetchables : com.example.vo.Person
+2025-04-19 13:55:13.631 [main] org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [com.example.vo.Person]
+ |  +-BasicFetch [com.example.vo.Person.age]
+ |  +-BasicFetch [com.example.vo.Person.firstName]
+ |  +-BasicFetch [com.example.vo.Person.gender]
+ |  +-BasicFetch [com.example.vo.Person.lastName]
+ |  \-BasicFetch [com.example.vo.Person.middleName]
+
+2025-04-19 13:55:13.798 [main] org.hibernate.orm.results.graph.AST - Stack trace calling DomainResultGraphPrinter
+java.lang.Exception: null
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.visitDomainResults(DomainResultGraphPrinter.java:73) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.logDomainResultGraph(DomainResultGraphPrinter.java:49) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.logDomainResultGraph(DomainResultGraphPrinter.java:40) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.sql.ast.spi.AbstractSqlAstTranslator.translateSelect(AbstractSqlAstTranslator.java:827) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.sql.ast.spi.AbstractSqlAstTranslator.translate(AbstractSqlAstTranslator.java:780) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.<init>(SingleIdLoadPlan.java:65) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.createLoadPlan(SingleIdEntityLoaderStandardImpl.java:195) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.prepare(SingleIdEntityLoaderStandardImpl.java:54) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareLoader(AbstractEntityPersister.java:3332) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:3326) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:204) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:319) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:269) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:894) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:913) [hibernate-core-6.2.0.Final.jar:6.2.0.Final]
+	at com.example.utils.HibernateUtil.getSessionFactory(HibernateUtil.java:37) [classes/:?]
+	at com.example.dao.PersonDAO.getSession(PersonDAO.java:18) [classes/:?]
+	at com.example.dao.PersonDAO.getPersonById(PersonDAO.java:52) [classes/:?]
+	at com.example.main.MainHibernate.main(MainHibernate.java:39) [classes/:?]
+2025-04-19 13:55:13.935 [main] org.hibernate.orm.sql.ast.tree - SQL AST Tree:%n    SelectStatement {
+      FromClause {
+        StandardTableGroup (p1 : com.example.vo.Person) {
+          primaryTableReference : Person as p1_0
+        }
+      }
+    }
+
+2025-04-19 13:55:14.065 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.sql.results.jdbc.spi.JdbcValuesMappingProducerProvider]
+2025-04-19 13:55:14.240 [main] org.hibernate.metamodel.internal.MetadataContext - Wrapping up metadata context...
+2025-04-19 13:55:14.468 [main] org.hibernate.metamodel.internal.MetadataContext - Starting entity [com.example.vo.Person]
+2025-04-19 13:55:14.580 [main] org.hibernate.metamodel.internal.AttributeFactory - Building identifier attribute [com.example.vo.Person.id]
+2025-04-19 13:55:14.724 [main] org.hibernate.metamodel.internal.AttributeFactory - Starting attribute metadata determination [id]
+2025-04-19 13:55:14.934 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined member [private java.lang.String com.example.vo.Person.id]
+2025-04-19 13:55:15.008 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined type [name=string, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+2025-04-19 13:55:15.104 [main] org.hibernate.metamodel.internal.AttributeFactory - Building attribute [com.example.vo.Person.age]
+2025-04-19 13:55:15.174 [main] org.hibernate.metamodel.internal.AttributeFactory - Starting attribute metadata determination [age]
+2025-04-19 13:55:15.252 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined member [private int com.example.vo.Person.age]
+2025-04-19 13:55:15.332 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined type [name=integer, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+2025-04-19 13:55:15.451 [main] org.hibernate.metamodel.internal.AttributeFactory - Building attribute [com.example.vo.Person.firstName]
+2025-04-19 13:55:15.584 [main] org.hibernate.metamodel.internal.AttributeFactory - Starting attribute metadata determination [firstName]
+2025-04-19 13:55:15.677 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined member [private java.lang.String com.example.vo.Person.firstName]
+2025-04-19 13:55:15.761 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined type [name=string, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+2025-04-19 13:55:15.838 [main] org.hibernate.metamodel.internal.AttributeFactory - Building attribute [com.example.vo.Person.gender]
+2025-04-19 13:55:15.938 [main] org.hibernate.metamodel.internal.AttributeFactory - Starting attribute metadata determination [gender]
+2025-04-19 13:55:16.048 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined member [private java.lang.String com.example.vo.Person.gender]
+2025-04-19 13:55:16.126 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined type [name=string, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+2025-04-19 13:55:16.203 [main] org.hibernate.metamodel.internal.AttributeFactory - Building attribute [com.example.vo.Person.lastName]
+2025-04-19 13:55:16.281 [main] org.hibernate.metamodel.internal.AttributeFactory - Starting attribute metadata determination [lastName]
+2025-04-19 13:55:16.372 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined member [private java.lang.String com.example.vo.Person.lastName]
+2025-04-19 13:55:16.514 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined type [name=string, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+2025-04-19 13:55:16.591 [main] org.hibernate.metamodel.internal.AttributeFactory - Building attribute [com.example.vo.Person.middleName]
+2025-04-19 13:55:16.699 [main] org.hibernate.metamodel.internal.AttributeFactory - Starting attribute metadata determination [middleName]
+2025-04-19 13:55:16.779 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined member [private java.lang.String com.example.vo.Person.middleName]
+2025-04-19 13:55:16.858 [main] org.hibernate.metamodel.internal.AttributeFactory -     Determined type [name=string, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+2025-04-19 13:55:16.982 [main] org.hibernate.metamodel.model.domain.AbstractIdentifiableType - Interpreting domain-model identifier descriptor
+2025-04-19 13:55:17.062 [main] org.hibernate.metamodel.internal.MetadataContext - Completed entity [com.example.vo.Person]
+2025-04-19 13:55:17.146 [main] org.hibernate.service.internal.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-04-19 13:55:17.231 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.event.spi.EntityCopyObserverFactory]
+2025-04-19 13:55:17.328 [main] org.hibernate.event.internal.EntityCopyObserverFactoryInitiator - Configured EntityCopyObserver strategy: disallow
+2025-04-19 13:55:17.435 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.batch.spi.BatchBuilder]
+2025-04-19 13:55:17.558 [main] org.hibernate.orm.jdbc.batch - Using standard BatchBuilder (1)
+2025-04-19 13:55:17.700 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform]
+2025-04-19 13:55:17.792 [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2025-04-19 13:55:17.859 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatformResolver]
+2025-04-19 13:55:17.926 [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2025-04-19 13:55:18.024 [main] org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 13:55:18.132 [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-19 13:55:18.200 [main] org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2cc03cd1] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@20fcea37]
+2025-04-19 13:55:18.268 [main] org.hibernate.query.named.NamedObjectRepository - Checking 0 named HQL queries
+2025-04-19 13:55:18.387 [main] org.hibernate.query.named.NamedObjectRepository - Checking 0 named SQL queries
+2025-04-19 13:55:18.459 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.tool.schema.spi.SchemaManagementTool]
+2025-04-19 13:55:18.654 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [null]
+2025-04-19 13:55:18.830 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+2025-04-19 13:55:18.923 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [sampledb]
+2025-04-19 13:55:19.007 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [sampledb] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:19.091 [main] org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69d2e517] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-04-19 13:55:19.202 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [Person]
+2025-04-19 13:55:19.273 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [Person] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:19.372 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [Id]
+2025-04-19 13:55:19.464 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [Id] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:19.552 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [age]
+2025-04-19 13:55:19.637 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [age] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:19.704 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [FirstName]
+2025-04-19 13:55:19.792 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [FirstName] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:19.862 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [gender]
+2025-04-19 13:55:19.937 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [gender] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:20.060 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [LastName]
+2025-04-19 13:55:20.147 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [LastName] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:20.258 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [MiddleName]
+2025-04-19 13:55:20.435 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [MiddleName] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:20.513 [main] org.hibernate.mapping.Table - No alter strings for table : Person
+2025-04-19 13:55:20.590 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [Person]
+2025-04-19 13:55:20.657 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [Person] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:20.746 [main] org.hibernate.tool.schema.UniqueConstraintSchemaUpdateStrategy - Interpreting UniqueConstraintSchemaUpdateStrategy from setting : null
+2025-04-19 13:55:20.824 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting for object name [Person]
+2025-04-19 13:55:20.919 [main] org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Rendering unquoted identifier [Person] in lower case for use in DatabaseMetaData
+2025-04-19 13:55:21.023 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+2025-04-19 13:55:21.128 [main] org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@369ad7da
+2025-04-19 13:55:21.279 [main] org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 92071664-c53b-48fa-b613-3c125b48ea4f (<unnamed>)
+2025-04-19 13:55:21.487 [main] org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2025-04-19 13:55:21.739 [main] org.hibernate.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@20fcea37] for TypeConfiguration
+2025-04-19 13:55:21.833 [main] org.hibernate.internal.SessionFactoryImpl - Instantiated SessionFactory
+2025-04-19 13:55:21.932 [main] org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl - Opening Hibernate Session.  tenant=null
+2025-04-19 13:55:22.206 [main] org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+2025-04-19 13:55:22.369 [main] org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2025-04-19 13:55:22.628 [main] org.hibernate.internal.SessionImpl - Opened Session [72b8f2ea-4af8-48b2-ad64-a060bb6e2452] at timestamp: 1745051122627
+2025-04-19 13:55:22.873 [main] org.hibernate.event.internal.DefaultLoadEventListener - Loading entity: [com.example.vo.Person#1744786909]
+2025-04-19 13:55:23.067 [main] org.hibernate.event.internal.DefaultLoadEventListener - Attempting to resolve: [com.example.vo.Person#1744786909]
+2025-04-19 13:55:23.183 [main] org.hibernate.event.internal.DefaultLoadEventListener - Object not resolved in any cache: [com.example.vo.Person#1744786909]
+2025-04-19 13:55:23.262 [main] org.hibernate.persister.entity.AbstractEntityPersister - Fetching entity: [com.example.vo.Person#1744786909]
+2025-04-19 13:55:23.365 [main] org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-04-19 13:55:23.502 [main] org.hibernate.orm.results - Registering initializer : EntityResultInitializer(com.example.vo.Person)
+2025-04-19 13:55:23.670 [main] org.hibernate.orm.results - Initializer list
+2025-04-19 13:55:23.826 [main] org.hibernate.orm.results -     com.example.vo.Person -> EntityResultInitializer(com.example.vo.Person)@715027790 (SingleTableEntityPersister(com.example.vo.Person))
+2025-04-19 13:55:23.907 [main] org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess - Executing query to retrieve ResultSet : select p1_0.Id,p1_0.age,p1_0.FirstName,p1_0.gender,p1_0.LastName,p1_0.MiddleName from Person p1_0 where p1_0.Id=?
+2025-04-19 13:55:23.990 [main] org.hibernate.SQL - 
+    select
+        p1_0.Id,
+        p1_0.age,
+        p1_0.FirstName,
+        p1_0.gender,
+        p1_0.LastName,
+        p1_0.MiddleName 
+    from
+        Person p1_0 
+    where
+        p1_0.Id=?
+2025-04-19 13:55:24.099 [main] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - Registering statement [com.mysql.cj.jdbc.ClientPreparedStatement: select p1_0.Id,p1_0.age,p1_0.FirstName,p1_0.gender,p1_0.LastName,p1_0.MiddleName from Person p1_0 where p1_0.Id=** NOT SPECIFIED **]
+2025-04-19 13:55:24.178 [main] org.hibernate.orm.jdbc.bind - binding parameter [1] as [VARCHAR] - [1744786909]
+2025-04-19 13:55:24.255 [main] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - Registering result set [com.mysql.cj.jdbc.result.ResultSetImpl@121cf6f4]
+2025-04-19 13:55:24.368 [main] org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor - LogicalConnection#afterStatement
+2025-04-19 13:55:24.465 [main] org.hibernate.orm.jdbc.extract - extracted value ([1] : [VARCHAR]) - [1744786909]
+2025-04-19 13:55:24.619 [main] org.hibernate.orm.jdbc.extract - extracted value ([2] : [INTEGER]) - [40]
+2025-04-19 13:55:24.707 [main] org.hibernate.orm.jdbc.extract - extracted value ([3] : [VARCHAR]) - [Madhusmita]
+2025-04-19 13:55:24.843 [main] org.hibernate.orm.jdbc.extract - extracted value ([4] : [VARCHAR]) - [Female]
+2025-04-19 13:55:24.928 [main] org.hibernate.orm.jdbc.extract - extracted value ([5] : [VARCHAR]) - [Sahoo]
+2025-04-19 13:55:25.039 [main] org.hibernate.orm.jdbc.extract - extracted value ([6] : [VARCHAR]) - []
+2025-04-19 13:55:25.153 [main] org.hibernate.orm.results.loading - StandardRowReader#readRow
+2025-04-19 13:55:25.239 [main] org.hibernate.orm.results.loading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Beginning Initializer#resolveKey process for entity : com.example.vo.Person
+2025-04-19 13:55:25.305 [main] org.hibernate.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (com.example.vo.Person): 1744786909
+2025-04-19 13:55:25.372 [main] org.hibernate.orm.results.loading.entity - (o.h.s.r.g.e.i.EntityResultInitializer) Beginning Initializer#resolveInstance process for entity (com.example.vo.Person) : 1744786909
+2025-04-19 13:55:25.466 [main] org.hibernate.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [com.example.vo.Person#1744786909] : 1206868531
+2025-04-19 13:55:26.002 [main] org.hibernate.orm.results.loading.entity - (EntityResultInitializer) Beginning Initializer#initializeInstance process for entity com.example.vo.Person#1744786909
+2025-04-19 13:55:26.088 [main] org.hibernate.orm.results - Extracted JDBC value [1] - [40]
+2025-04-19 13:55:26.202 [main] org.hibernate.orm.results - Extracted JDBC value [2] - [Madhusmita]
+2025-04-19 13:55:26.268 [main] org.hibernate.orm.results - Extracted JDBC value [3] - [Female]
+2025-04-19 13:55:26.351 [main] org.hibernate.orm.results - Extracted JDBC value [4] - [Sahoo]
+2025-04-19 13:55:26.439 [main] org.hibernate.orm.results - Extracted JDBC value [5] - []
+2025-04-19 13:55:26.553 [main] org.hibernate.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : com.example.vo.Person#1744786909
+2025-04-19 13:55:26.648 [main] org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@59f76e56
+2025-04-19 13:55:26.731 [main] org.hibernate.orm.results.loading - StandardRowReader#afterRow
+2025-04-19 13:55:26.802 [main] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - Releasing result set [com.mysql.cj.jdbc.result.ResultSetImpl@121cf6f4]
+2025-04-19 13:55:26.917 [main] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - Closing result set [com.mysql.cj.jdbc.result.ResultSetImpl@121cf6f4]
+2025-04-19 13:55:27.061 [main] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - Releasing statement [com.mysql.cj.jdbc.ClientPreparedStatement: select p1_0.Id,p1_0.age,p1_0.FirstName,p1_0.gender,p1_0.LastName,p1_0.MiddleName from Person p1_0 where p1_0.Id='1744786909']
+2025-04-19 13:55:27.214 [main] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - Closing prepared statement [com.mysql.cj.jdbc.ClientPreparedStatement: select p1_0.Id,p1_0.age,p1_0.FirstName,p1_0.gender,p1_0.LastName,p1_0.MiddleName from Person p1_0 where p1_0.Id='1744786909']
+2025-04-19 13:55:27.382 [main] org.hibernate.engine.internal.StatefulPersistenceContext - Initializing non-lazy collections
+2025-04-19 13:55:27.510 [main] org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor - LogicalConnection#afterTransaction
+2025-04-19 13:55:27.650 [main] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - Releasing JDBC resources
+2025-04-19 13:55:27.733 [main] org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+2025-04-19 13:55:27.812 [main] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - Releasing JDBC resources
+2025-04-19 13:55:27.896 [main] com.example.dao.PersonDAO - Person Person [id=1744786909, firstName=Madhusmita, lastName=Sahoo, middleName=, age=40, gender=Female]
+2025-04-19 13:55:27.973 [main] com.example.dao.PersonDAO - Exited getPersonById
+2025-04-19 13:55:28.055 [main] com.example.main.MainHibernate - Person: Person [id=1744786909, firstName=Madhusmita, lastName=Sahoo, middleName=, age=40, gender=Female]
+2025-04-19 13:55:28.134 [main] com.example.main.MainHibernate - 1.This is a TRACE message.
+2025-04-19 13:55:28.299 [main] com.example.main.MainHibernate - 2.This is a DEBUG message.
+2025-04-19 13:55:28.407 [main] com.example.main.MainHibernate - 3.This is an INFO message.
+2025-04-19 13:55:28.544 [main] com.example.main.MainHibernate - 4.This is a WARN message.
+2025-04-19 13:55:28.619 [main] com.example.main.MainHibernate - 5.This is an ERROR message.
+2025-04-19 13:58:12.373 [main] com.example.main.MainHibernate - Inside Main
+2025-04-19 13:58:14.204 [main] com.example.main.MainHibernate - 1.This is a TRACE message.
+2025-04-19 13:58:14.397 [main] com.example.main.MainHibernate - 2.This is a DEBUG message.
+2025-04-19 13:58:14.536 [main] com.example.main.MainHibernate - 3.This is an INFO message.
+2025-04-19 13:58:14.674 [main] com.example.main.MainHibernate - 4.This is a WARN message.
+2025-04-19 13:58:14.861 [main] com.example.main.MainHibernate - 5.This is an ERROR message.
